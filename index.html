@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CT Foreclosure Feed — Daily, Clean, Investor-Ready</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="All Connecticut foreclosure auctions in one clean feed. Appraisal values, required deposits, deduped dockets, weekly insights. Built for house flippers & cash buyers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:#0b0c10; --card:#111217; --muted:#9aa3b2; --text:#eaeef5; --brand:#7c9cff; --brand2:#88e0a3; --stroke:#1b1d26;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{opacity:.9}
+    .wrap{max-width:1080px;margin:0 auto;padding:28px 20px}
+    .nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+    .logo{font-weight:800;font-size:20px;letter-spacing:.2px}
+    .nav a.btn{padding:10px 14px;border:1px solid var(--stroke);border-radius:10px}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:24px;margin-top:10px}
+    .hero h1{font-size:42px;line-height:1.05;margin:.2em 0 .3em}
+    .sub{color:var(--muted);font-size:18px}
+    .pill{display:inline-block;font-weight:700;background:linear-gradient(90deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 18px;border-radius:12px;border:1px solid var(--stroke);background:#151827;color:var(--text);font-weight:700}
+    .btn.primary{background:linear-gradient(180deg,#4158d0,#2a2f74);border-color:#2a2f74}
+    .btn.ghost{background:transparent}
+    .card{background:var(--card);border:1px solid var(--stroke);border-radius:16px;padding:18px}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+    .kpi{padding:14px;border-radius:12px;border:1px solid var(--stroke);background:#0f121a}
+    .kpi .n{font-weight:800;font-size:22px}
+    h2{margin:28px 0 10px;font-size:28px}
+    h3{margin:10px 0 6px;font-size:18px}
+    .list{margin:0;padding-left:18px;color:var(--muted)}
+    .muted{color:var(--muted)}
+    .badge{display:inline-block;padding:5px 10px;border-radius:999px;background:#121629;border:1px solid var(--stroke);font-size:12px;color:var(--muted)}
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:10px}
+    .price .tag{font-size:36px;font-weight:800}
+    .check{color:var(--brand2);margin-right:8px}
+    .footer{margin-top:40px;padding:24px 0;border-top:1px solid var(--stroke);color:var(--muted);font-size:14px}
+    @media (max-width:920px){.hero{grid-template-columns:1fr}.grid3,.grid2,.pricing,.kpis{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="logo">CT Foreclosure Feed</div>
+      <div>
+        <a href="#pricing" class="btn">Pricing</a>
+        <a href="#faq" class="btn">FAQ</a>
+        <a href="https://YOUR-CHECKOUT-URL" class="btn">Sign in</a>
+      </div>
+    </div>
+
+    <section class="hero card">
+      <div>
+        <div class="badge">Built for house flippers & cash buyers</div>
+        <h1>All CT foreclosure auctions — <span class="pill">cleaned, enriched, and delivered daily.</span></h1>
+        <p class="sub">Stop clicking 90 town pages. Get one investor-ready feed with <b>appraisal values</b>, <b>required deposits</b>, deduped dockets, and a weekly “Top Towns” report.</p>
+        <div class="cta">
+          <a href="https://YOUR-CHECKOUT-URL" class="btn primary">Start subscription →</a>
+          <a href="#sample" class="btn ghost">See a sample CSV</a>
+        </div>
+        <div class="kpis">
+          <div class="kpi"><div class="n">1 feed</div><div class="muted">All towns</div></div>
+          <div class="kpi"><div class="n">Daily</div><div class="muted">Auto-updated</div></div>
+          <div class="kpi"><div class="n">Appraisal</div><div class="muted">When posted</div></div>
+          <div class="kpi"><div class="n">Deposits</div><div class="muted">Parsed for you</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Why pros pay for this</h3>
+        <ul class="list">
+          <li>⏱️ Save hours every week—no manual scraping.</li>
+          <li>🧹 Clean, consistent columns: address/city/zip, docket, date.</li>
+          <li>💰 Appraisal values + required deposits pulled from official pages.</li>
+          <li>🗺️ All towns in one file, deduped by docket & date.</li>
+          <li>📬 Weekly “Top Towns” heatmap for where to hunt.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="inside">
+      <h2>What’s inside the feed</h2>
+      <div class="grid3">
+        <div class="card">
+          <h3>Statewide coverage</h3>
+          <p class="muted">Every CT town, one source. No more clicking by-town lists or missing posts.</p>
+        </div>
+        <div class="card">
+          <h3>Enriched money fields</h3>
+          <p class="muted"><b>Appraisal value</b> and <b>required deposit</b> parsed from the official posting. No more bogus “$1 opening bids.”</p>
+        </div>
+        <div class="card">
+          <h3>Investor-ready columns</h3>
+          <p class="muted">Docket • Auction date • Address • City/State/ZIP • Appraisal • Required deposit • Link to the official posting.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="grid2" style="margin-top:16px">
+      <div class="card">
+        <h2>How it works</h2>
+        <ol class="list">
+          <li>We crawl all towns daily from CT Judicial.</li>
+          <li>We normalize addresses, dedupe by docket+date, and enrich from official detail pages.</li>
+          <li>We publish a fresh CSV + a weekly “Top Towns” report.</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h2>Who it’s for</h2>
+        <ul class="list">
+          <li>House flippers & wholesalers</li>
+          <li>Cash buyers / RE funds</li>
+          <li>Brokerages with investor teams</li>
+          <li>Acquisitions managers & VAs</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="sample" style="margin-top:16px">
+      <h2>Try a sample</h2>
+      <div class="card">
+        <p class="muted">Kick the tires. This is a real snapshot CSV (personal info removed). Columns match the paid feed.</p>
+        <div class="cta">
+          <!-- Replace with your hosted sample CSV and weekly HTML -->
+          <a class="btn" href="https://YOUR-CDN/ct_foreclosures_latest.csv" target="_blank" rel="noopener">Download sample CSV</a>
+          <a class="btn" href="https://YOUR-CDN/top_towns_weekly_latest.html" target="_blank" rel="noopener">View weekly report</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" style="margin-top:16px">
+      <h2>Pricing</h2>
+      <div class="pricing">
+        <div class="card price">
+          <div class="badge">Getting started</div>
+          <div class="tag">$39<span class="muted">/mo</span></div>
+          <p class="muted">Daily CSV + Weekly report. Solo investors & VAs.</p>
+          <ul class="list">
+            <li><span class="check">✔</span>Statewide CSV (daily)</li>
+            <li><span class="check">✔</span>Appraisal & deposit fields</li>
+            <li><span class="check">✔</span>Weekly Top Towns</li>
+          </ul>
+          <a href="https://YOUR-CHECKOUT-URL?plan=starter" class="btn primary" style="margin-top:10px">Start Starter →</a>
+        </div>
+        <div class="card price" style="border-color:#2d365f">
+          <div class="badge">Most popular</div>
+          <div class="tag">$79<span class="muted">/mo</span></div>
+          <p class="muted">For small teams who want filters & email alerts.</p>
+          <ul class="list">
+            <li><span class="check">✔</span>Everything in Starter</li>
+            <li><span class="check">✔</span>County-filtered CSVs</li>
+            <li><span class="check">✔</span>Weekly email alerts</li>
+          </ul>
+          <a href="https://YOUR-CHECKOUT-URL?plan=pro" class="btn primary" style="margin-top:10px">Start Pro →</a>
+        </div>
+        <div class="card price">
+          <div class="badge">Teams & API</div>
+          <div class="tag">$199<span class="muted">/mo</span></div>
+          <p class="muted">For brokerages & funds. API access & priority support.</p>
+          <ul class="list">
+            <li><span class="check">✔</span>Everything in Pro</li>
+            <li><span class="check">✔</span>JSON API endpoints</li>
+            <li><span class="check">✔</span>Priority support</li>
+          </ul>
+          <a href="mailto:sales@yoursite.com?subject=CT%20Foreclosure%20Feed%20Enterprise" class="btn">Talk to sales →</a>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:10px">Cancel anytime. If we miss a day, we credit you—simple.</p>
+    </section>
+
+    <section id="faq" style="margin-top:16px">
+      <h2>FAQ</h2>
+      <div class="grid2">
+        <div class="card">
+          <h3>Isn’t this public info?</h3>
+          <p class="muted">Yep—and that’s the point. We turn raw, spread-out posts into one clean, enriched feed with appraisal & deposit fields, deduping, and weekly strategy hints. Time is the real cost.</p>
+        </div>
+        <div class="card">
+          <h3>Do you list opening bids?</h3>
+          <p class="muted">CT auctions often don’t publish true “opening bids.” Sites sometimes show $1 as a placeholder. We scrub those and add <b>Appraisal Value</b> + <b>Required Deposit</b> from the official posting instead.</p>
+        </div>
+        <div class="card">
+          <h3>How fresh is the data?</h3>
+          <p class="muted">We crawl daily. The “Latest CSV” is updated every morning. Weekly report updates on Saturdays.</p>
+        </div>
+        <div class="card">
+          <h3>Can I filter by county or date?</h3>
+          <p class="muted">Yes—Pro includes county-filtered CSVs. In Excel/Sheets you can also filter by auction_date and location.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div class="grid2">
+        <div>
+          © <span id="year"></span> CT Foreclosure Feed • All rights reserved.
+          <div class="muted">Not affiliated with the State of Connecticut. Data aggregated from public postings.</div>
+        </div>
+        <div style="text-align:right">
+          <a class="muted" href="mailto:support@yoursite.com">support@yoursite.com</a> ·
+          <a class="muted" href="/terms.html">Terms</a> ·
+          <a class="muted" href="/privacy.html">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
